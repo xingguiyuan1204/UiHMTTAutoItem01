@@ -68,3 +68,21 @@ mis_pass_btn = By.XPATH, "//*[text()='通过']/.."
 mis_confirm_pass = By.CSS_SELECTOR, ".el-button--primary"
 # 文章id
 mis_article_id = By.CSS_SELECTOR, ".cell>span"
+
+"""以下为app"""
+
+appPackage = "com.itcast.toutiaoApp"
+appActivity = ".MainActivity"
+
+# 用户名
+app_username = By.XPATH,"//*[@index='1'and@class='android.widget.EditText']"
+# 密码
+app_pwd = By.XPATH,"//*[@index='2'and@class='android.widget.EditText']"
+# 登录按钮
+app_login_btn = By.XPATH, "//*[@index='4' and @class='android.widget.Button']"
+# 判断登录成功
+app_me = By.XPATH, "//*[@index='3' and contains(@text,'我的')]"
+# 主页面上方频道模块
+app_index_module = By.XPATH,"//*[@class='android.widget.HorizontalScrollView']"
+# 文章区域
+app_article_area = By.XPATH, "//*[@bounds='[0,390][1080,1716]']"

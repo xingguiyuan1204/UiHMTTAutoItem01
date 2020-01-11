@@ -1,3 +1,5 @@
+import time
+
 import allure
 from selenium.webdriver.support.wait import WebDriverWait
 
@@ -53,5 +55,5 @@ class Base:
     # 将图片写入allure报告
     def __base_write_img(self):
         log.error("异常处理！正在截图写入报告")
-        with open("./images/err.png","rb")as f:
+        with open("./images/{}err.png".format(time.time()),"rb")as f:
             allure.attach("错误原因：",f.read(),allure.attach_type.PNG )
