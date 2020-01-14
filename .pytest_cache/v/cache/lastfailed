@@ -1,5 +1,0 @@
-{
-  "scripts/test04_mis_audit.py::TestMisAudit::()::test_article_audit": true,
-  "scripts/test05_app_login.py::TestAppLogin::()::test01_app_login": true,
-  "scripts/test06_app_article.py::TestAppLogin::()::test01_app_login": true
-}

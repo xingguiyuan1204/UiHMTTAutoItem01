@@ -85,4 +85,4 @@ app_me = By.XPATH, "//*[@index='3' and contains(@text,'我的')]"
 # 主页面上方频道模块
 app_index_module = By.XPATH,"//*[@class='android.widget.HorizontalScrollView']"
 # 文章区域
-app_article_area = By.XPATH, "//*[@bounds='[0,390][1080,1716]']"
+app_article_area = By.XPATH, "//*[@bounds='[0,390][1080,1722]']"

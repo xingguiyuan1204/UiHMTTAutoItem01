@@ -65,7 +65,7 @@ class AppBase(Base):
         end_y = height * 0.15
 
         # 组合 find_text包含的元素定位信息
-        loc = By.XPATH, "//*[@bounds='[0,390][1080,1716]']//*[contains(@text,'{}')]".format(find_text)
+        loc = By.XPATH, "//*[@bounds='[0,390][1080,1722]']//*[contains(@text,'{}')]".format(find_text)
 
         # 获取当前页面结构
         page_source = self.driver.page_source
@@ -76,7 +76,8 @@ class AppBase(Base):
                 el = self.base_find(loc, timeout=2)
                 print("找到 包含 {} 文章的标题！ ->文章标题为:{}".format(find_text, el.text))
                 el.click()
-                # 跳出循环
+                # 跳出
+                # 循环
                 break
             except:
                 print("当前页面没有找到指定的文章标题")
